@@ -2,7 +2,8 @@ import { ExperienceModel } from './models/experience';
 
 export const experiences: ExperienceModel[] = [
     {
-        title: "DSC Tech Lead",
+        position: "Tech Lead",
+        company: "Google DSC",
         description: `Create content for the tutorials at
                     the Google DSC club in Manchester and lead
                     the tech team.`,
@@ -10,7 +11,8 @@ export const experiences: ExperienceModel[] = [
         toDate: "Present"
     },
     {
-        title: "UniCS Co-Director of Game Dev",
+        position: "Co-Director of Game Dev",
+        company: "UniCS",
         description: `Help run the Game Dev society at UoM`,
         fromDate: "May, 2020",
         toDate: "Present"

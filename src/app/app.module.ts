@@ -6,6 +6,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatCardModule } from '@angular/material/card';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -30,6 +31,7 @@ import { XpCardComponent } from './pages/experiences/xp-card/xp-card.component';
     MatButtonModule,
     MatIconModule,
     MatMenuModule,
+    MatCardModule,
     AppRoutingModule
   ],
   providers: [],

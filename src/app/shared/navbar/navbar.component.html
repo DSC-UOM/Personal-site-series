@@ -1,1 +1,12 @@
-<p>navbar works!</p>
+<div class="navbar">
+    <mat-toolbar color="primary">
+        <span>John Doe</span>
+        <div class="nav-links">
+            <a mat-button [routerLink]="['/']">Home</a>
+            <a mat-button>Experience</a>
+            <a mat-button>Contact</a>
+        </div>
+        <span class="distant-spacer"></span>
+        <a mat-button [routerLink]="['/login']">Login</a>
+    </mat-toolbar>
+</div>

@@ -12,13 +12,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { ExperiencesComponent } from './pages/experiences/experiences.component';
+import { XpCardComponent } from './pages/experiences/xp-card/xp-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NavbarComponent,
-    ExperiencesComponent
+    ExperiencesComponent,
+    XpCardComponent
   ],
   imports: [
     BrowserModule,

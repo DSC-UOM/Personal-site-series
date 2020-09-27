@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { DeviceService } from 'src/app/services/device.service';
+
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  isMobile: boolean;
+
+  constructor(private deviceService: DeviceService) { }
 
   ngOnInit(): void {
+    this.isMobile = this.deviceService.isMobile();
+  }
+
+  windowResize(): void {
+    this.isMobile = this.deviceService.isMobile();
   }
 
 }

@@ -1,5 +1,5 @@
-<div class="navbar">
-    <mat-toolbar color="primary">
+<div class="navbar" (window:resize)="windowResize()">
+    <mat-toolbar *ngIf="!isMobile" color="primary">
         <span>John Doe</span>
         <div class="nav-links">
             <a mat-button [routerLink]="['/']">Home</a>
@@ -8,5 +8,18 @@
         </div>
         <span class="distant-spacer"></span>
         <a mat-button [routerLink]="['/login']">Login</a>
+    </mat-toolbar>
+
+    <mat-toolbar *ngIf="isMobile" color="primary">
+        <span>John Doe</span>
+        <span class="distant-spacer"></span>
+        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="icon-button with menu icon">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu" yPosition="below">
+            <a mat-menu-item [routerLink]="['/']">Home</a>
+            <a mat-menu-item>Experience</a>
+            <a mat-menu-item>Contact</a>
+        </mat-menu>
     </mat-toolbar>
 </div>

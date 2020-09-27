@@ -1,5 +1,5 @@
-<div class="navbar">
-    <mat-toolbar color="primary">
+<div class="navbar" (window:resize)="windowResize()">
+    <mat-toolbar *ngIf="!isMobile" color="primary">
         <span>John Doe</span>
         <div class="nav-links">
             <a mat-button [routerLink]="['/']">Home</a>

@@ -3,7 +3,7 @@
         <span>John Doe</span>
         <div class="nav-links">
             <a mat-button [routerLink]="['/']">Home</a>
-            <a mat-button>Experience</a>
+            <a mat-button [routerLink]="['/experiences']">Experiences</a>
             <a mat-button>Contact</a>
         </div>
         <span class="distant-spacer"></span>
@@ -18,7 +18,7 @@
         </button>
         <mat-menu #menu="matMenu" yPosition="below">
             <a mat-menu-item [routerLink]="['/']">Home</a>
-            <a mat-menu-item>Experience</a>
+            <a mat-menu-item [routerLink]="['/experiences']">Experiences</a>
             <a mat-menu-item>Contact</a>
         </mat-menu>
     </mat-toolbar>
